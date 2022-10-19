@@ -8,32 +8,56 @@ Features Decription
 The dataset consists of almost 183,412 rows and 16 columns:
 
 Duration_sec: This is the duration of trip per member in seconds.
+
 start_time: This include the information about the start time and date for each trip.
+
 end_time: This include the information about the end time and date for each trip.
+
 start_station_id: Take-off station identification number.
+
 start_station_name: Take-off station name.
+
 start_station_latitude: Location of start station in terms of latitude.
+
 start_station_longitude: Location of start station in terms of longitude.
+
 end_station_id: Identification number of station where members ends their trips.
+
 end_station_name: Name of stations where members ends their trips.
+
 end_station_latitude: Location of end station in terms of latitude.
+
 end_station_longitude: Location of end station in terms of longitude.
+
 bike_id: This is the identification number of Bike used for each trip.
+
 user_type: Types of members engaging with the bike trips. whether customer or suscribers.
+
 member_birth_year: Birth year of members.
 member_gender: Sex of members engaging with the bike trips. We have Male, Female and Others.
+
 bike_share_for_all_trip: This tells wether members share their ride or not throughout their entire trip.
+
 Little modification done on the dataset to suit my analysis and exploration.
 
 Null values were removed from the dataset
+
 start_time and end_time was changed to datetime
+
 start_time and the end_time splitted into time of the day, day of the week and month of the year. This is necessary for my analysis
+
 Datatype of member_birth_year was changed to integer
+
 Actual age of members were extracted from member_birth_year provided and assign it to age groups
+
 duration_min was added to the dataframe
+
 Drop the columns that are not needed for the analysis
+
 After the modification
-After the whole cleaning process, Ford GoBike System Data having 183412 rows of trip and 16 columns of features reduced to 174952 rows of trip and the columns of features increased to 18 features.
+
+After the whole cleaning process, Ford GoBike System Data having 183412 rows of trip and 16 columns of features reduced to 174952 rows of trip and the
+columns of features increased to 18 features.
 
 For this project, I carried out exploratory analysis through visualization on When are most trips taken in terms of time of day, day of the week. Although frequency of trips by Month was not considered because the data provided only covers a single month (February) for start month just that most of the trips ended in early March (the first week).
 
@@ -42,20 +66,33 @@ For the visualizations, I started with univariate visualizations, moving through
 For the case study, we will concentrate only on the variables in the top ten bullet points: start day time, end day time, start weekday, end_weekday and the independent variables.
 
 start day time - Morning, Afternoon, Evening and Night.
+
 end day time - Morning, Afternoon, Evening and Night.
+
 start weekday: - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday.
+
 end_weekday: - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday.
+
 Member_age: Exact age of members engaging with the bike trip system
+
 Duration_min: Duration of trip converted to minutes
+
 member_gender: Sex of members engaging with the bike trips - Male, Female and Others.
+
 user_type: Types of members engaging with the bike trips - customer or suscribers.
+
 start_station_name: Take-off station name.
+
 end_station_name: Name of stations where members ends their trips.
+
 start day time, end day time, start weekday and end_weekday are the dependent variables
+
 Others - are the independent variables
+
 Our focus will be on answering the question about the effect of these independent variables on the frequency of trips taken in terms of time of day, day of the week.
 
 ## Summary of Findings
+
 I started up with univariate exploration where I found out that Morning for time of the day and Thursday for weekdays happens to be the most frequent period when members are engaging with the Bike sharing system.
 
 I also found that more of the bike trips bike-sharing system covering the greater San Francisco Bay area starts in the morning follow by the evening time then afternoon while members do not really start their trips in the night. Same goes for end time of the day. Also, members whose ride starts and ends at same time of the day are total of 169086 while those members whose ride starts and end in the different times of the day are 5866. This implies that most of the members engaging with bike-sharing system covering the greater San Francisco Bay starts and ends their trips at same time of the day of which Morning is the most frequent.
